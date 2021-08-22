@@ -1,23 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="15dip">
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="?attr/colorPrimary">
+
+        <com.silei.villagerinfomanagement.view.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/default_head"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txt_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="#333333"
-            android:textStyle="bold"
-            android:text="我的"
-            />
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="@string/admin"
+            android:textColor="@color/base_white"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_village_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item"
+            android:drawableTop="@drawable/icon_village_qr_code"
+            android:drawablePadding="20dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/largePadding"
+            android:text="@string/village_qr_code"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/txt_my_vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item"
+            android:drawableTop="@drawable/icon_my_vote"
+            android:drawablePadding="20dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/largePadding"
+            android:text="@string/my_vote"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/txt_my_investigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item"
+            android:drawableTop="@drawable/icon_my_investigate"
+            android:drawablePadding="20dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/largePadding"
+            android:text="@string/my_investigate"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/txt_my_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item"
+            android:drawableTop="@drawable/icon_my_report"
+            android:drawablePadding="20dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/largePadding"
+            android:text="@string/my_report"
+            android:textColor="@color/black" />
+
     </LinearLayout>
-</ScrollView >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_browse_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_browse_history"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/largePadding"
+                android:text="@string/browse_history"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_my_notify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_my_notify"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/largePadding"
+                android:text="@string/my_notify"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_feedback_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_feedback_suggestion"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/largePadding"
+                android:text="@string/feedback_suggestion"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_help_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_help_info"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/largePadding"
+                android:text="@string/help_info"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txt_branch_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_item"
+                android:drawableLeft="@drawable/icon_branch_info"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/largePadding"
+                android:text="@string/branch_info"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/bigConfirmButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/logout" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
