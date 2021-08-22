@@ -25,7 +25,7 @@ public class FragmentHome extends Fragment {
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        TextView textView = (TextView) view.findViewById(R.id.textView);
+        // TextView textView = (TextView) view.findViewById(R.id.textView);
         return view;
     }
 }
