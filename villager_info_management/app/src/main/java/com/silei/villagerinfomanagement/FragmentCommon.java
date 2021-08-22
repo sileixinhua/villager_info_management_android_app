@@ -15,6 +15,9 @@ import android.widget.TextView;
  * https://github.com/yaochangliang159/Android-TabView
  */
 public class FragmentCommon extends Fragment {
+
+    private static final String TAG = FragmentCommon.class.getSimpleName();
+
     TextView textView;
 
     public static FragmentCommon newInstance(String text){

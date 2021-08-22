@@ -22,6 +22,9 @@ import java.util.List;
  * https://github.com/yaochangliang159/Android-TabView
  */
 public class QuickStartActivity extends FragmentActivity {
+
+    private static final String TAG = MainActivity.class.getSimpleName();
+
     TabView tabView;
 
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,11 +34,11 @@ public class QuickStartActivity extends FragmentActivity {
         tabView= (TabView) findViewById(R.id.tabView);
         // start add data
         List<TabViewChild> tabViewChildList=new ArrayList<>();
-        TabViewChild tabViewChild01=new TabViewChild(R.drawable.tab01_sel,R.drawable.tab01_unsel,"首页",  FragmentCommon.newInstance("首页"));
+        TabViewChild tabViewChild01=new TabViewChild(R.drawable.tab01_sel,R.drawable.tab01_unsel,"首页",  FragmentHome.newInstance());
         // TabViewChild tabViewChild02=new TabViewChild(R.drawable.tab02_sel,R.drawable.tab02_unsel,"内存",  FragmentCommon.newInstance("内存"));
         // TabViewChild tabViewChild03=new TabViewChild(R.drawable.tab03_sel,R.drawable.tab03_unsel,"配置",  FragmentCommon.newInstance("配置"));
         // TabViewChild tabViewChild04=new TabViewChild(R.drawable.tab04_sel,R.drawable.tab04_unsel,"购物车",FragmentCommon.newInstance("购物车"));
-        TabViewChild tabViewChild05=new TabViewChild(R.drawable.tab05_sel,R.drawable.tab05_unsel,"我的",  FragmentCommon.newInstance("我的"));
+        TabViewChild tabViewChild05=new TabViewChild(R.drawable.tab05_sel,R.drawable.tab05_unsel,"我的",  FragmentCustomer.newInstance());
         tabViewChildList.add(tabViewChild01);
         // tabViewChildList.add(tabViewChild02);
         // tabViewChildList.add(tabViewChild03);
@@ -47,7 +50,7 @@ public class QuickStartActivity extends FragmentActivity {
         tabView.setOnTabChildClickListener(new TabView.OnTabChildClickListener() {
             @Override
             public void onTabChildClick(int  position, ImageView currentImageIcon, TextView currentTextView) {
-                Toast.makeText(getApplicationContext(),"position:"+position, Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getApplicationContext(),"position:"+position, Toast.LENGTH_SHORT).show();
             }
         });
     }
