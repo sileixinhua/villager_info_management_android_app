@@ -6,6 +6,30 @@
     <string name="my_investigate">我的调查</string>
     <string name="my_report">我的报备</string>
 
+    <string name="my_talking">我要说事</string>
+    <string name="village_news">村内资讯</string>
+    <string name="handle_upload">随手上报</string>
+    <string name="event_report">事项报备</string>
+
+    <string name="my_suggestion">我要议事</string>
+    <string name="meeting_record">会议直播</string>
+    <string name="vote_investigate">投票调研</string>
+    <string name="file_upload">资料上传</string>
+
+    <string name="my_doing">我要办事</string>
+    <string name="home_stay_report">民宿报批</string>
+    <string name="beautiful_village">美丽乡村</string>
+    <string name="village_property_transaction">产权交易</string>
+    <string name="three_property_management">三资管理</string>
+    <string name="trust_rank">诚信指数</string>
+    <string name="township_counselor">乡贤参事</string>
+
+    <string name="my_discuss">我要评事</string>
+    <string name="results_public">结果公示</string>
+    <string name="satisfaction_measurement">满意度测评</string>
+
+    <string name="news_information">新闻资讯</string>
+
     <string name="browse_history">浏览记录</string>
     <string name="my_notify">我的通知</string>
     <string name="feedback_suggestion">意见反馈</string>

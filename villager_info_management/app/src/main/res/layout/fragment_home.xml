@@ -1,23 +1,299 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:padding="10dp">
+
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="15dip">
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txt_village_qr_code1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="#333333"
-            android:textStyle="bold"
-            android:text="首页"
-            />
+            android:drawableTop="@drawable/em_village_talk"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/largePadding" />
+
+        <!--新闻资讯-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--我要说事-->
+            <TextView
+                android:id="@+id/txt_village_qr_code2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/largePadding"
+                android:text="@string/my_talking"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_village_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:drawableTop="@drawable/icon_home_village_news"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/village_news"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_handle_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:drawableTop="@drawable/icon_home_handle_upload"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/handle_upload"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_event_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/icon_home_event_report"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/event_report"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--我要议事-->
+            <TextView
+                android:id="@+id/txt_village_qr_code21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/largePadding"
+                android:text="@string/my_suggestion"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_meeting_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:drawableTop="@drawable/icon_home_meeting_record"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/meeting_record"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_vote_investigate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:drawableTop="@drawable/icon_home_vote_investigate"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/vote_investigate"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_file_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/icon_home_file_upload"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/file_upload"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <!--我要办事-->
+            <TextView
+                android:id="@+id/txt_village_qr_code212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/largePadding"
+                android:text="@string/my_doing"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_home_stay_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:drawableTop="@drawable/icon_home_home_stay_report"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/largePadding"
+                        android:text="@string/home_stay_report"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_beautiful_village"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:drawableTop="@drawable/icon_home_beautiful_village"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/largePadding"
+                        android:text="@string/beautiful_village"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_village_property_transaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/icon_home_village_property_transaction"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/largePadding"
+                        android:text="@string/village_property_transaction"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_three_property_management"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:drawableTop="@drawable/icon_home_three_property_management"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/largePadding"
+                        android:text="@string/three_property_management"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_trust_rank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:drawableTop="@drawable/icon_home_trust_rank"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/largePadding"
+                        android:text="@string/trust_rank"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_township_counselor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/icon_home_township_counselor"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/largePadding"
+                        android:text="@string/township_counselor"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--我要评事-->
+            <TextView
+                android:id="@+id/txt_village_qr_code211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/largePadding"
+                android:text="@string/my_discuss"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_results_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="90dp"
+                    android:drawableTop="@drawable/icon_home_results_public"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/results_public"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/txt_satisfaction_measurement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/icon_home_satisfaction_measurement"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/largePadding"
+                    android:text="@string/satisfaction_measurement"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_news_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/largePadding"
+            android:text="@string/news_information"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_browse_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_home_village_news"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/largePadding"
+            android:text="村名代表大会报告"
+            android:textColor="@color/black" />
+
     </LinearLayout>
-</ScrollView >
+
+</ScrollView>
