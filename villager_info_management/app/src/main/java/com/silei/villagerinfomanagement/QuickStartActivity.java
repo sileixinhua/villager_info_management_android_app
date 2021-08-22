@@ -1,6 +1,9 @@
 package com.silei.villagerinfomanagement;
 
 import android.os.Bundle;
+// https://blog.csdn.net/engerla/article/details/104821473
+// 导入V4包却无法使用android.support.v4.app.Fragment
+// 因为 google 已经使用 Android X 来替代 support V4
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
 import android.widget.ImageView;
